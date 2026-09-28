@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#10110f" />
+    <meta name="description" content="Portfolio de GHT Frinel — designer numérique, UI/UX et identité de marque au Bénin." />
+    <title>GHT Frinel — Designer numérique</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles-v2.css" />
+  </head>
+  <body class="game-locked">
+    <section class="entry-game grid-bg" id="entry-game" role="dialog" aria-modal="true" aria-labelledby="entry-game-title">
+      <div class="entry-game-glow" aria-hidden="true"></div>
+      <header class="entry-game-head">
+        <span class="entry-game-brand"><i>✣</i> FRINEL.COM</span>
+        <span>ACCESS PROTOCOL / 01</span>
+        <span>PORTO-NOVO · 2026</span>
+      </header>
+      <div class="entry-game-copy">
+        <span>Une première interaction</span>
+        <h1 id="entry-game-title">Connecte<br>les points<span>.</span></h1>
+        <p>Relie la constellation dans l’ordre.<br>La forme finale ouvrira le portfolio.</p>
+      </div>
+      <div class="constellation" data-constellation>
+        <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <polyline class="constellation-path" data-game-path points=""></polyline>
+          <line class="constellation-preview" data-game-preview x1="50" y1="12" x2="50" y2="12"></line>
+        </svg>
+        <button class="constellation-node next" data-point="0" data-x="50" data-y="9" style="--x:50%;--y:9%" aria-label="Point 1"><span>01</span><i></i></button>
+        <button class="constellation-node" data-point="1" data-x="79" data-y="82" style="--x:79%;--y:82%" aria-label="Point 2"><span>02</span><i></i></button>
+        <button class="constellation-node" data-point="2" data-x="9" data-y="35" style="--x:9%;--y:35%" aria-label="Point 3"><span>03</span><i></i></button>
+        <button class="constellation-node" data-point="3" data-x="91" data-y="35" style="--x:91%;--y:35%" aria-label="Point 4"><span>04</span><i></i></button>
+        <button class="constellation-node" data-point="4" data-x="21" data-y="82" style="--x:21%;--y:82%" aria-label="Point 5"><span>05</span><i></i></button>
+      </div>
+      <footer class="entry-game-foot">
+        <div class="entry-progress"><span data-game-status>Commence par le point 01</span><div><i data-game-progress></i></div></div>
+        <button class="entry-skip" type="button" data-game-skip>Passer l’introduction ↗</button>
+        <span class="entry-counter"><b data-game-count>00</b> / 05</span>
+      </footer>
+      <div class="entry-success" aria-live="polite"><span>✣</span><strong>Signal complet</strong><p>Bienvenue dans mon univers.</p></div>
+    </section>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+    <div class="page-noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand magnetic" href="#/" aria-label="Accueil GHT Frinel">
+        <span class="brand-mark">✣</span><span>FRINEL.COM</span>
+      </a>
+      <div class="availability"><i></i><span>Une approche centrée sur l’humain,<br>mêlant modernité et culture.</span></div>
+      <button class="menu-toggle magnetic" aria-expanded="false" aria-controls="menu-panel"><span>Menu</span><b></b></button>
+    </header>
+    <aside class="menu-panel" id="menu-panel" aria-hidden="true">
+      <div class="menu-meta mono"><span>Navigation</span><span>Porto-Novo · 2026</span></div>
+      <nav class="menu-nav" aria-label="Navigation principale">
+        <a href="#/" data-route="/"><em>01</em><span>Accueil</span></a>
+        <a href="#/projets" data-route="/projets"><em>02</em><span>Projets</span></a>
+        <a href="#/a-propos" data-route="/a-propos"><em>03</em><span>À propos</span></a>
+        <a href="#/services" data-route="/services"><em>04</em><span>Services</span></a>
+        <a href="#/contact" data-route="/contact"><em>05</em><span>Contact</span></a>
+      </nav>
+      <div class="menu-foot mono"><a href="mailto:frinelght16@gmail.com">frinelght16@gmail.com</a><span>Instagram · Behance · LinkedIn</span></div>
+    </aside>
+    <main id="app" tabindex="-1"></main>
+    <script src="./app-v2.js"></script>
+  </body>
+</html>
