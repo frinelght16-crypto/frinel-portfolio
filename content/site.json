@@ -1,0 +1,33 @@
+{
+  "hero": {
+    "eyebrow": "Product designer",
+    "title": ["Rendre le", "complexe simple,", "utile et beau."]
+  },
+  "about": {
+    "intro": "Designer numérique passionné de technologie, je conçois des sites web, interfaces et applications mobiles qui offrent des expériences mémorables et repensent la manière dont les utilisateurs interagissent avec le digital.",
+    "title": "Un design compris avant d’être admiré.",
+    "bio": "Je suis GHT Frinel, designer numérique basé à Porto-Novo. Je transforme les situations complexes en interfaces simples et en identités capables de durer. Chaque projet commence par l’écoute, se précise par la stratégie et prend vie dans les détails.",
+    "perspective": "Mon travail est nourri par le contexte béninois et par une culture visuelle internationale. Cette double perspective m’aide à créer des produits familiers sans être génériques."
+  },
+  "contact": {
+    "email": "frinelght16@gmail.com",
+    "phone": "+229 01 90 57 02 33",
+    "phoneLink": "+2290190570233",
+    "linkedin": "#",
+    "behance": "#",
+    "location": "Porto-Novo · Disponible à distance"
+  },
+  "projects": [
+    {"slug":"fiwe","title":"Fiwè","type":"UX/UI design","year":"2026","image":"./assets/project-fiwe.png","desc":"Une plateforme culturelle qui rend les récits du Bénin visibles, accessibles et désirables.","filter":"ux","format":"portrait"},
+    {"slug":"emin","title":"ÉMIN","type":"Brand identity","year":"2025","image":"./assets/project-emin-new.png","desc":"Une identité éditoriale audacieuse qui met la culture contemporaine en mouvement.","filter":"brand","format":"landscape"},
+    {"slug":"oms","title":"OMS","type":"UX/UI design","year":"2026","image":"./assets/project-oms-source.png","desc":"Une expérience claire et structurée pour faciliter l’accès aux ressources de santé.","filter":"ux","format":"medium"},
+    {"slug":"epass","title":"ePass","type":"Web design","year":"2025","image":"./assets/project-oms.png","desc":"Une réponse digitale simple et contextualisée à un enjeu quotidien de mobilité.","filter":"web","format":"portrait right"},
+    {"slug":"pns","title":"PNS","type":"App design","year":"2025","image":"./assets/project-epass-new.png","desc":"Une interface mobile fluide qui rapproche une institution de ses publics.","filter":"web","format":"wide"}
+  ],
+  "services": [
+    {"title":"UX / UI design","kicker":"Comprendre avant de dessiner.","image":"./assets/service-ux.png","desc":"Des parcours lisibles, des prototypes tangibles et des interfaces qui donnent envie d’avancer.","tags":["Recherche","Parcours","Design system"]},
+    {"title":"Identité visuelle","kicker":"Rendre une marque impossible à confondre.","image":"./assets/service-brand.png","desc":"Une direction artistique distinctive, construite pour rester cohérente du premier regard au dernier détail.","tags":["Stratégie","Identité","Guidelines"]},
+    {"title":"Web design","kicker":"Faire du web un espace vivant.","image":"./assets/service-web.png","desc":"Des sites expressifs, rapides et responsives où la narration et l’usage avancent au même rythme.","tags":["Direction artistique","Motion","Responsive"]},
+    {"title":"App design","kicker":"Mettre l’essentiel au bout du pouce.","image":"./assets/service-app.png","desc":"Des expériences mobiles intuitives, pensées autour des gestes, du contexte et de l’accessibilité.","tags":["iOS","Android","Prototype"]}
+  ]
+}
