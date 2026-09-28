@@ -1,0 +1,99 @@
+media:
+  input: assets
+  output: ./assets
+  rename: safe
+  categories: [image, video]
+
+settings:
+  content:
+    merge: true
+
+content:
+  - name: portfolio
+    label: Contenu du portfolio
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: hero
+        label: Page d’accueil
+        type: object
+        fields:
+          - name: eyebrow
+            label: Métier
+            type: string
+          - name: title
+            label: Titre principal — une ligne par élément
+            type: string
+            list:
+              min: 1
+              max: 4
+      - name: about
+        label: À propos
+        type: object
+        fields:
+          - name: intro
+            label: Introduction
+            type: text
+          - name: title
+            label: Titre
+            type: string
+          - name: bio
+            label: Biographie
+            type: text
+          - name: perspective
+            label: Perspective
+            type: text
+      - name: contact
+        label: Contact
+        type: object
+        fields:
+          - { name: email, label: E-mail, type: string }
+          - { name: phone, label: Téléphone affiché, type: string }
+          - { name: phoneLink, label: Téléphone pour le lien, type: string }
+          - { name: linkedin, label: URL LinkedIn, type: string }
+          - { name: behance, label: URL Behance, type: string }
+          - { name: location, label: Localisation, type: string }
+      - name: projects
+        label: Projets
+        type: object
+        list:
+          min: 1
+          collapsible:
+            collapsed: true
+            summary: "{title} · {year}"
+        fields:
+          - { name: title, label: Nom, type: string, required: true }
+          - { name: slug, label: Identifiant URL, type: string, required: true, pattern: "^[a-z0-9-]+$" }
+          - { name: type, label: Discipline, type: string }
+          - { name: year, label: Année, type: string }
+          - { name: image, label: Visuel, type: image }
+          - { name: desc, label: Description, type: text }
+          - name: filter
+            label: Catégorie
+            type: select
+            options:
+              values: [ux, web, brand]
+          - name: format
+            label: Format de carte
+            type: select
+            options:
+              values: [portrait, landscape, medium, "portrait right", wide]
+      - name: services
+        label: Services
+        type: object
+        list:
+          min: 1
+          max: 6
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - { name: title, label: Nom, type: string, required: true }
+          - { name: kicker, label: Accroche, type: string }
+          - { name: image, label: Image de fond, type: image }
+          - { name: desc, label: Description, type: text }
+          - name: tags
+            label: Mots-clés
+            type: string
+            list: true
